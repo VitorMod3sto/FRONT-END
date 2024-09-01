@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <nav>
+        <!-- <nav> Define a seção de navegação (MENU) -->
+        <ul>
+            <!-- <ul> Cria uma lista não ordenada para os itens do menu. -->
+            <li><a href="./introducao.html">Página Principal</a></li>
+            <!-- <li>: Cada item da lista representa um link para uma página.
+                <a>: Define um âncora (link), o atributo href especifica o destino. -->
+            <li><a href="./tabela.html">Tabela</a></li>
+            <li><a href="./formulario.html">Formulário</a></li>
+        </ul>
+    </nav>
+    <h1>Usuários</h1>
+
+    <form>
+        <!--  Inicia um formulário HTML. Todo o conteúdo dentro desta tag pertence ao formulário. -->
+        <label for="nome">Nome:</label>
+        <!-- Cria uma etiqueta (label) para o campo de nome. O atributo for vincula a etiqueta ao elemento de entrada 
+         com o id "nome". -->
+        <input type="text" id="nome" name="nome"><br>
+        <!-- Cria um campo de entrada de texto para o nome. O atributo type="text" especifica que o campo aceita texto. 
+         Os atributos id e name são usados para identificar o elemento.-->
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br>
+
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <!-- Cria um botão de rádio para selecionar o sexo masculino ou feminino. 
+         O atributo name="sexo" agrupa os botões de rádio, permitindo apenas uma seleção por vez. -->
+        <input type="radio" name="sexo" value="feminino"> Feminino<br>
+
+        <label for="uf">UF:</label>
+        <select id="uf" name="uf">
+            <option value="">Selecione</option>
+            <option value="">DF</option>
+            <option value="">GO</option>
+        </select><br>
+
+        <label for="cidade">Cidade:</label>
+        <select id="cidade" name="cidade">
+            <option value="">Selecione</option>
+            <option value="">Ceilândia</option>
+            <option value="">Águas Lindas</option>
+        </select><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="musica"> Música
+        <!-- Cria uma caixa de seleção para o hobby música. O atributo name="hobbies" permite selecionar múltiplos hobbies. -->
+        <input type="checkbox" name="hobbies" value="futebol"> Futebol
+        <input type="checkbox" name="hobbies" value="artes"> Artes
+        <input type="checkbox" name="hobbies" value="jogos"> Jogos
+        <input type="checkbox" name="hobbies" value="cozinhar"> Cozinhar<br>
+
+        <label for="observacao">Observação:</label><br>
+        <textarea id="observacao" name="observacao"></textarea><br>
+        <!-- Cria um campo de texto multiline para observações. -->
+
+        <button type="submit">Salvar</button>
+        <!--  Cria um botão de submit que envia os dados do formulário. -->
+        <button type="reset">Limpar</button>
+        <!-- Cria um botão de reset que limpa todos os campos do formulário. -->
+        <button type="button">Voltar</button>
+        <!-- Cria um botão padrão que não realiza nenhuma ação por padrão. 
+         Manipula-se com JavaScript. -->
+    </form>
+</body>
+
+</html>

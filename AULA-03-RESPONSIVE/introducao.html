@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Introdução</title>
+
+    <!-- Abaixo dá pra usar o Css dentro do html quando se coloca dentro da tag <style> -->
+    <style></style>
+    <!-- Para usar css externo usamos tag link-->
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+    <nav>
+        <!-- <nav> DEFINE A SEÇÃO DE NAVEGAÇÃO (MENU) -->
+        <ul>
+            <!-- <ul> Cria uma lista não ordenada para os itens do menu. -->
+            <li><a href="./introducao.html">Página Principal</a></li>
+            <!-- <li>: Cada item da lista representa um link para uma página.
+                <a>: Define um âncora (link), o atributo href especifica o destino. -->
+            <li><a href="./tabela.html">Tabela</a></li>
+            <li><a href="./formulario.html">Formulário</a></li>
+        </ul>
+    </nav>
+
+    <!--PARÁGRAFO -->
+    <!-- Dá pra usar a personalização de css dentro do html usando style="" , na qual o que
+    estiver dentro das "" é css-->
+    <h1 style="color:aqua; text-align: center;"> BEM VINDO A PÁGINA PRINCIPAL </h1>
+
+    <br>
+    <!-- Quebra de linha -->
+    <!--<h1>  Define o texto como maior título hierárquico (existem 6)-->
+    <h2> PARÁGRAFO 1:</h2>
+    <p class="texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum, et minus excepturi soluta mollitia
+        numquam dignissimos fugit dolorum sequi, quae at voluptate nihil nostrum omnis, neque esse? Qui, accusamus.
+    </p id="paragrafo">
+    <!-- <p> Cria um parágrafo-->
+    <h2> PARÁGRAFO 2:</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum, et minus excepturi soluta mollitia
+        numquam dignissimos fugit dolorum sequi, quae at voluptate nihil nostrum omnis, neque esse? Qui, accusamus.
+    </p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum, et minus excepturi soluta mollitia
+        numquam dignissimos fugit dolorum sequi, quae at voluptate nihil nostrum omnis, neque esse? Qui, accusamus.
+    </p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum, et minus excepturi soluta mollitia
+        numquam dignissimos fugit dolorum sequi, quae at voluptate nihil nostrum omnis, neque esse? Qui, accusamus.
+    </p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum, et minus excepturi soluta mollitia
+        numquam dignissimos fugit dolorum sequi, quae at voluptate nihil nostrum omnis, neque esse? Qui, accusamus.
+    </p>
+
+    <br>
+    <!-- Cria uma quebra de linha -->
+
+    <!-- SEÇÃO DE IMAGENS -->
+    <h1> IMAGENS: </h1>
+    <!-- Essa linha insere um título de nível 1 (h1) dentro da div com a classe "IMAGENS". O texto "IMAGENS:" 
+         será exibido em um tamanho de fonte maior, indicando a seção de imagens. -->
+    <img class="imagem1" src="https://th.bing.com/th/id/OIP.mmYd_9EW9c33QCqdk8HfMgHaE8?rs=1&pid=ImgDetMain"
+        alt="Mengão > São Paulo" width="600" height="400">
+    <!-- <img ...> Insere a primeira imagem. -->
+    <!-- class="imagem1" Atribui a classe "imagem1" à imagem, permitindo a aplicar estilos específicos -->
+    <!-- src="" Define o endereço da imagem (URL). -->
+    <!-- alt="Mengão > São Paulo": Define um texto alternativo para a imagem.-->
+    <!-- width="600" height="400": Define a largura e a altura da imagem em pixels. -->
+
+    <img class="imagem2" src="./img/R.jfif" alt="Mengão > São Paulo" width="600" height="400">
+    <!-- Mesma estrutura, porém desta vez usando aimagem como arquivo ao invés da URL -->
+    <!-- src="./arquivo" ao invés de src="URL"-->
+    <br>
+
+    <!--LINKS -->
+    <h1> LINKS:</h1>
+    <a href="https://www.google.com.br/">LINK LOJA FLA</a>
+    <br><br>
+    <a href="https://www.google.com.br/">LINK GOOGLE</a>
+    <!-- Linkando um texto-->
+    <br>
+
+    <!-- LISTAS-->
+    <h2>LISTAS</h2>
+    <p>Lista não ordenada:</p>
+    <ul type="circle">
+        <!-- Inicia uma lista não ordenada. O atributo type="circle" define que os marcadores dos itens da lista 
+            serão círculos.-->
+        <li type="square">Item 1
+            <!--  Cria um item da lista com um marcador quadrado (apesar de a lista pai ter marcadores circulares).-->
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <p>Lista ordenada:</p>
+    <ol>
+        <!--  Inicia uma lista ordenada. Por padrão, os itens de uma lista ordenada são numerados. -->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+</body>
+
+</html>
