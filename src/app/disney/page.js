@@ -12,13 +12,13 @@ export default function Page() {
         apiDisney.get('character').then(resultado => {
             setPersonagens(resultado.data.data)
         })
-    },[])
+    }, [])
 
     return (
         <Pagina titulo="Disney">
-          {personagem.map(item => (
-                          <p>{item.name}</p>
-                      ))}
+            {personagem.map(item => (
+                <p key={item._id}>{item.name}</p>
+            ))}
         </Pagina>
     )
 }

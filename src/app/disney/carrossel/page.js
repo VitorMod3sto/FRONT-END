@@ -21,9 +21,14 @@ export default function Page() {
             <Container>
                 <Carousel>
                     {personagem.map(item => (
-                        <Carousel.Item>
-                            <img width="1200" src={item.imageUrl} />
+                        <Carousel.Item key={item._id}>
+                            <img width="1100" height="500" src={item.imageUrl} />
+                            <Carousel.Caption>
+                                <h3>{item.name}</h3>
+                                
+                            </Carousel.Caption>
                         </Carousel.Item>
+
                     ))}
                 </Carousel>
             </Container>

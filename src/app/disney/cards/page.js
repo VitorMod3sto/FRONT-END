@@ -20,7 +20,7 @@ export default function Page() {
         <Pagina titulo="Card Disney">
             <Row md={3}>
                 {personagem.map(item => (
-                    <Col className="my-2">
+                    <Col key={item._id} className="my-2">
                         <Card>
                             <Card.Img height="265" variant="top" src={item.imageUrl} />
                             <Card.Body>
