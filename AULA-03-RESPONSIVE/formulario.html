@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+</head>
+
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form>
+        <!-- Abre o formulário-->
+        <label for="nome">Nome: </label><input type="text" name="nome" id="nome" />
+        <br>
+        <label>Telefone: </label><input type="text" name="telefone" id="telefone" />
+        <br>
+        <label>E-mail: </label><input type="text" name="email" id="email" />
+        <br>
+        <label>Senha: </label><input type="password" name="senha" id="senha" />
+        <br>
+        <!-- <label> define o rótulo (Texto do campo)-->
+        <!-- name="" deferecia cada input ao enviar os values-->
+        <!-- Type="" do input transforma o input em marcação de opção, senha, data, email, etc-->
+        <!-- id define o input como único -->
+        <!-- for="" faz o nome ter referencia de qual id se trata o input,
+        ao clicar no nome do campo (qual input), ele já abre para inserir o valor -->
+        <label for="">Sexo: </label>
+        <input type="radio" name="sexo" id="masculino" value="M">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="sexo" id="feminino" value="F">
+        <label for="feminino">Feminino</label>
+        <!-- o name="sexo" faz com que seja definido sempre apenas um valor para o campo (não ter multiseleções)-->
+        <!-- value="" define o valor que será enviado ao enviar o formulário-->
+        <br>
+        <label for="uf">UF: </label>
+        <select name="uf" id="uf">
+            <option value="">Selecione</option>
+            <option value="GO">Goiás</option>
+            <option value="DF">Distrito Federal</option>
+        </select>
+        <br>
+        <label for="uf">Cidade: </label>
+        <select name="cidade" id="cidade">
+            <option value="">Selecione</option>
+            <option value="GO">Goiânia</option>
+            <option value="DF">Ceilândia</option>
+        </select>
+
+        <fieldset>
+            <legend>Hobbies: </legend>
+        <input type="checkbox" name="hobbies[]" id="musica" value="M"><label for="musica">Música</label>
+        <br>
+        <input type="checkbox" name="hobbies[]" id="futebol" value="F"><label for="futebol">Futebol</label>
+        <br>
+        <input type="checkbox" name="hobbies[]" id="artes" value="A"><label for="artes">Artes</label>
+        <br>
+        <input type="checkbox" name="hobbies[]" id="jogos" value="J"><label for="jogos">Jogos</label>
+        <br>
+        </fieldset>
+
+        <label for="observacao">Observação: </label>
+        <textarea name="observacao" id="observacao" cols="50" rows="5"></textarea>
+        <br>
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar">
+        <input type="button" value="Voltar">
+    </form>
+</body>
+
+</html>

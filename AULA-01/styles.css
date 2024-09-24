@@ -1,0 +1,133 @@
+nav {
+    background-color: #f1f1f1;
+    /* Define a cor de fundo do elemento nav como um cinza claro (#f1f1f1). */
+    padding: 10px;
+    /* Adiciona um espaço interno de 10 pixels em todos os lados do conteúdo dentro do elemento nav. */
+    text-align: center;
+    /* Alinha o texto dentro do elemento nav ao centro. */
+}
+
+nav ul {
+    list-style-type: none;
+    /* Remove os marcadores (bullets) da lista não ordenada (ul) dentro do elemento nav. */
+    margin: 0;
+    /* Remove as margens superior e inferior da lista não ordenada (ul). */
+    padding: 0;
+    /* Remove as margens superior e inferior da lista não ordenada (ul). */
+    overflow: hidden;
+    /*  Evita que os itens da lista ultrapassem o contêiner do menu (nav). */
+}
+
+nav li {
+    display: inline-block;
+    /* Faz com que os itens da lista (li) sejam exibidos lado a lado como elementos inline, mas com as
+     propriedades de um elemento de bloco. Isso permite que eles sejam posicionados horizontalmente e 
+     tenham largura definida. */
+}
+
+nav a {
+    display: block;
+    /* Faz com que os links (a) ocupem toda a largura do elemento pai (li). */
+    color: rgb(0, 0, 0);
+    /* Define a cor do texto dos links como preto. */
+    text-align: center;
+    /* Alinha o texto dos links ao centro. */
+    padding: 14px 16px;
+    /* Adiciona um espaço interno de 14 pixels na vertical e 16 pixels na horizontal ao redor do texto dos links. */
+    text-decoration: none;
+    /* Remove a sublinhado padrão dos links. */
+}
+
+h1 {
+    text-decoration: underline;
+    /* Seleciona todos os elementos <h1> do HTML.
+   Aplica um sublinhado ao texto dentro desses elementos. */
+}
+
+.PARÁGRAFO {
+    text-align: center;
+    /* Seleciona todos os elementos com a classe PARÁGRAFO.
+Alinha o texto dentro desses elementos ao centro. */
+}
+
+.IMAGENS {
+    text-align: center;
+    /* Seleciona todos os elementos com a classe IMAGENS.
+Alinha o texto dentro desses elementos ao centro. */
+}
+
+.LINKS {
+    text-align: center;
+}
+
+.LISTAS {
+    text-align: center;
+}
+
+.LISTAS ul,
+.LISTAS ol {
+    list-style-position: inside;
+    /*  Posiciona os marcadores (bolinhas, números) dentro da área de conteúdo do item da lista, em vez de fora. */
+    margin: 0 auto;
+    /* Centraliza horizontalmente a lista em relação ao seu container pai (a div LISTAS). */
+    padding: 0;
+    /* Remove o padding padrão das listas, permitindo um controle mais preciso do espaçamento. */
+    display: flex;
+    /* Transforma a lista em um container flexbox */
+    /* Transforma a lista em um container flexbox, dando mais flexibilidade para controlar o layout dos itens. */
+    flex-direction: column;
+    /* Organiza os itens em uma coluna */
+    /* : Organiza os itens da lista em uma coluna vertical. */
+    align-items: center;
+    /* Centraliza os itens horizontalmente */
+    /*  Centraliza os itens horizontalmente dentro do container flexbox. Isso significa que cada item da lista ficará 
+    centralizado em relação às margens esquerda e direita. */
+}
+
+.LISTAS li {
+    text-align: center;
+    /* Centraliza o texto dentro de cada item */
+    /* Seleciona: Todos os itens de lista (<li>) dentro da div LISTAS.
+Função: Centraliza o texto dentro de cada item da lista. Isso garante que o texto de cada item fique 
+centralizado horizontalmente dentro do item. */
+}
+
+
+.imagem-container {
+    display: flex;
+    /* Seleciona todos os elementos com a classe imagem-container.
+Define o tipo de display como flex para criar um container flexível.
+Distribui os elementos filhos dentro do container de forma uniforme, com espaço entre eles. */
+
+    justify-content: space-between;
+    /* Seleciona todos os elementos com a classe imagem.
+Alinha o texto dentro desses elementos ao centro. */
+}
+
+.imagem {
+    text-align: center;
+    /* Seleciona todos os elementos com a classe imagem.
+Alinha o texto dentro desses elementos ao centro. */
+}
+
+.LINKS a {
+    color: black;
+}
+table{
+    border-collapse:collapse;
+    /* Junta todas as células da tabela*/
+}
+td, th{
+    border: 1px solid black;
+    padding: 10px;
+}
+table {
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    text-align: center;
+}

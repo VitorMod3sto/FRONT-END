@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabela</title>
+    <link rel="stylesheet" href="styles.css"> </head>
+<body>
+    <!-- MENU -->
+    <nav>
+        <!-- <nav> Define a seção de navegação (MENU) -->
+        <ul>
+            <!-- <ul> Cria uma lista não ordenada para os itens do menu. -->
+            <li><a href="./introducao.html">Página Principal</a></li>
+            <!-- <li>: Cada item da lista representa um link para uma página.
+                <a>: Define um âncora (link), o atributo href especifica o destino. -->
+            <li><a href="./tabela.html">Tabela</a></li>
+            <li><a href="./formulario.html">Formulário</a></li>
+        </ul>
+    </nav>
+
+    <h1>Usuários</h1>
+    <table>
+        <!-- Esta linha inicia a marcação de uma tabela HTML. A tag <table> indica o começo da tabela e informa ao 
+            navegador que os dados seguintes devem ser renderizados como uma tabela.-->
+        <thead>
+            <!-- Esta tag define o início do elemento <thead>, que é usado para agrupar as linhas de cabeçalho da tabela. -->
+            <tr>
+                <!-- Esta tag define uma linha dentro da tabela (tr significa table row). -->
+                <th>Nome</th>
+                <!-- Esta tag define uma célula de cabeçalho da tabela (th significa table header).
+                  Cada célula contém o título de uma coluna específica. -->
+                <th colspan="2">Contatos</th>
+                <!-- Título de duas colunas agrupadas sob o nome "Contatos". O atributo colspan="2" indica que essa 
+                 célula se estende por duas colunas. (abaixo outro exemplo com 3 colunas)-->
+                <th colspan="3">Contatos</th>
+            </tr>
+            <tr>
+                <th></th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th>CEP</th>
+                <th>UF</th>
+                <th>Cidade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Esta tag define o início do elemento <tbody>, que é usado para agrupar as linhas de dados da tabela. -->
+            <tr>
+                <td>Irineu Teles</td>
+                <!-- Esta tag define uma célula de dados da tabela (td significa table data). 
+                 Cada célula contém um valor específico relativo à sua coluna. -->
+                <td>(61) 98888-8888</td>
+                <td>Irineu@gmail.com.br</td>
+                <td>72.236-800</td>
+                <td>DF</td>
+                <td>Ceilândia</td>
+            </tr>
+            <tr>
+                <td>Mariazinha Maria</td>
+                <td>(61) 99999-9999</td>
+                <td>maria@iesb.br</td>
+                <td>72.210-054</td>
+                <td>DF</td>
+                <td>Sol Nascente</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
