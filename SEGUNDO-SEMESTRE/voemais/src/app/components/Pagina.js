@@ -6,24 +6,29 @@ export default function Pagina(props) {
         <>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand href="/filmes">Filmes Revisão</Navbar.Brand>
+                    <Navbar.Brand href="/filmes">VoeMais Airlines</Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="/filmes">Filmes Revisão</Nav.Link>
-                        <Nav.Link href="/filmes">Filmes</Nav.Link>
-                        <Nav.Link href="/series">Series</Nav.Link>
-                        <Nav.Link href="/atores">Atores</Nav.Link>
-                        <NavDropdown title="Séries" id="basic-nav-dropdown"> 
-                            <NavDropdown.Item href="/series">
-                                Populares
+                        <Nav.Link href="/aeroportos">Aeroportos</Nav.Link>
+                        <Nav.Link href="/empresas">Empresas</Nav.Link>
+                        <Nav.Link href="/passageiros">Passageiros</Nav.Link>
+                        <Nav.Link href="/passagem">Passagem</Nav.Link>
+                        <Nav.Link href="/voos">Voos</Nav.Link>
+                        <NavDropdown title="Create" id="basic-nav-dropdown"> 
+                            <NavDropdown.Item href="/aeroportos/create">
+                                Aeroportos                               
                             </NavDropdown.Item>
-                        </NavDropdown>
-                        <NavDropdown title="Filmes" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="./filmes">
-                                Em cartaz
+                            <NavDropdown.Item href="/empresas/create">
+                                Empresas                              
                             </NavDropdown.Item>
-                            
-                            <NavDropdown.Divider />
-
+                            <NavDropdown.Item href="/passageiros/create">
+                                Passageiros                                
+                           </NavDropdown.Item>
+                            <NavDropdown.Item href="/passagem/create">
+                                Passagem                       
+                            </NavDropdown.Item>
+                            <NavDropdown.Item href="/voos/create">
+                                Voos                       
+                            </NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Container>
