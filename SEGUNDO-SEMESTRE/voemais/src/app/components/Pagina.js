@@ -6,7 +6,7 @@ export default function Pagina(props) {
         <>
             <Navbar bg="dark" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand href="/filmes">VoeMais Airlines</Navbar.Brand>
+                    <Navbar.Brand href="/">VoeMais Airlines</Navbar.Brand>
                     <Nav className="me-auto">
                         <Nav.Link href="/aeroportos">Aeroportos</Nav.Link>
                         <Nav.Link href="/empresas">Empresas</Nav.Link>
