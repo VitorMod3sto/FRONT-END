@@ -10,26 +10,23 @@ import { FaCheck } from "react-icons/fa";
 import { IoIosArrowRoundBack } from "react-icons/io";
 import { v4 } from "uuid";
 
-export default function Page(params) {
+export default function Page({params}) {
 
 const route = useRouter()
 
-const[empresa, setEmpresa] = useState({ nome: '', logo: '', site: '' })
-
-    useEffect(() => {
-
-        const empresas = JSON.parse(localStorage.getItem('empresas')) || []
-        const dados = empresas.find(item=>item.id = params.id)
-        setEmpresa(dados)
-
-    }, [])
+const empresas = JSON.parse(localStorage.getItem('empresas')) || []
+const dados = empresas.find(item=>item.id == params.id)
+const empresa = dados || { nome: '', logo: '', site: '' }
 
 
 function salvar(dados){
-    const empresas = JSON.parse(localStorage.getItem('empresas')) || []
 
+    if(empresa.id){
+    Object.assign(empresa, dados)
+}else{
     dados.id = v4()
     empresas.push(dados)
+}
     localStorage.setItem('empresas', JSON.stringify(empresas))
     return route.push('/empresas')
 }

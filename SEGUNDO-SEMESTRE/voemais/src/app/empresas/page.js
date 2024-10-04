@@ -31,7 +31,7 @@ export default function Page() {
         <Pagina titulo="Empresas">
 
             <div className="d-flex justify-content-start mb-3">
-                <Link href="/empresas/create" className="btn btn-dark me-2"><FaPlus /></Link>
+                <Link href="/empresas/form" className="btn btn-dark me-2"><FaPlus /></Link>
             </div>
 
 
@@ -47,7 +47,7 @@ export default function Page() {
                     {empresas.map(item => (
                         <tr key={item.id}>
                             <td>
-                                <Link href={`/empresas/edit/${item.id}`}>
+                                <Link href={`/empresas/form/${item.id}`}>
                                 <FaPen 
                                 title='Editar' className="ms-2 me-2 text-primary" />
                                 </Link>
