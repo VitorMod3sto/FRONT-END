@@ -2,7 +2,7 @@ import * as Yup from 'yup';
 
 const VooValidator = Yup.object().shape({
   internacional: Yup.string()
-    .oneOf(['Sim', 'Nao'], 'Selecione Sim ou Não')
+    .oneOf(['Sim', 'Nao', 'nao', 'sim', 'Não'], 'Selecione Sim ou Não')
     .required('Campo obrigatório'),
   identificador: Yup.string()
     .min(3, 'O mínimo de caracteres é 3!')
@@ -21,6 +21,7 @@ const VooValidator = Yup.object().shape({
   empresa: Yup.string()
     .required('Campo obrigatório'),
   preco: Yup.number()
+    .typeError('O preço deve ser um número!')
     .positive('O preço deve ser um valor positivo!')
     .required('Campo obrigatório'),
 });

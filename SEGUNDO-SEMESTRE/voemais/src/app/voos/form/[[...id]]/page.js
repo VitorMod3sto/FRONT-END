@@ -21,7 +21,7 @@ export default function Page({ params }) {
     const [aeroportos, setAeroportos] = useState([])
 
     useEffect(() => {
-        setAeroportos(JSON.parse(localStorage.getItem('aeroporto')) || [])
+        setAeroportos(JSON.parse(localStorage.getItem('aeroportos')) || [])
     }, [])
 
     const [empresas, setEmpresas] = useState([])
@@ -166,7 +166,7 @@ export default function Page({ params }) {
                             <Form.Group className="mb-3" controlId="preco">
                                 <Form.Label>Preço</Form.Label>
                                 <Form.Control
-                                    type="text"
+                                    type="number"
                                     name="preco"
                                     value={values.preco}
                                     onChange={handleChange('preco')}
